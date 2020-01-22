@@ -21,6 +21,8 @@
 
     <link href="js/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -101,13 +103,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr id="tr1">
                                         <td><input class="check" name="record" type="checkbox" value="userId"></td>
                                         <td>
                                             <a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="UUID-001" data-level="1" data-catelv1="UUID-001" data-catelv2="" data-catelv3="" data-catelv4="" data-catename="ประชากรศาสตร์ ประชากรและเคหะ" data-codeid="os_01">
                                                 <i class="fas fa-edit text-success"></i>
                                             </a>
-                                            <i class="fas fa-trash-alt text-danger"></i>
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a> </td>
                                         </td>
                                         <td>1</td>
                                         <td>ประชากรศาสตร์ ประชากรและเคหะ</td>
@@ -117,15 +119,110 @@
                                         <td>1/16/2020</td>
                                         <td><i class="fas fa-check-circle text-success"></i></td>
                                     </tr>
-                                    <tr>
+                                    <tr id="tr2">
                                         <td><input class="check" name="record" type="checkbox" value="userId"></td>
                                         <td>
                                             <a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="UUID-001" data-level="1" data-catelv1="UUID-001" data-catelv2="" data-catelv3="" data-catelv4="" data-catename="ประชากรศาสตร์ ประชากรและเคหะ" data-codeid="os_01">
                                                 <i class="fas fa-edit text-success"></i>
                                             </a>
-                                            <i class="fas fa-trash-alt text-danger"></i>
-                                        </td>
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a> </td>
                                         <td>2</td>
+                                        <td>-ประชากรศาสตร์</td>
+                                        <td>สถิติทางการ</td>
+                                        <td>2/10/2020</td>
+                                        <td>dem</td>
+                                        <td>1/16/2020</td>
+
+                                        <td><i class="fas fa-ban text-danger"></i></td>
+                                    </tr>
+                                    <tr id="tr3">
+                                        <td><input class="check" name="record" type="checkbox" value="userId"></td>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="UUID-001" data-level="1" data-catelv1="UUID-001" data-catelv2="" data-catelv3="" data-catelv4="" data-catename="ประชากรศาสตร์ ประชากรและเคหะ" data-codeid="os_01">
+                                                <i class="fas fa-edit text-success"></i>
+                                            </a>
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a> </td>
+                                        <td>3</td>
+                                        <td>-ประชากรศาสตร์</td>
+                                        <td>สถิติทางการ</td>
+                                        <td>2/10/2020</td>
+                                        <td>dem</td>
+                                        <td>1/16/2020</td>
+
+                                        <td><i class="fas fa-ban text-danger"></i></td>
+                                    </tr>
+                                    <tr id="tr4">
+                                        <td><input class="check" name="record" type="checkbox" value="userId"></td>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="UUID-001" data-level="1" data-catelv1="UUID-001" data-catelv2="" data-catelv3="" data-catelv4="" data-catename="ประชากรศาสตร์ ประชากรและเคหะ" data-codeid="os_01">
+                                                <i class="fas fa-edit text-success"></i>
+                                            </a>
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a> </td>
+                                        <td>4</td>
+                                        <td>-ประชากรศาสตร์</td>
+                                        <td>สถิติทางการ</td>
+                                        <td>2/10/2020</td>
+                                        <td>dem</td>
+                                        <td>1/16/2020</td>
+
+                                        <td><i class="fas fa-ban text-danger"></i></td>
+                                    </tr>
+                                    <tr id="tr5">
+                                        <td><input class="check" name="record" type="checkbox" value="userId"></td>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="UUID-001" data-level="1" data-catelv1="UUID-001" data-catelv2="" data-catelv3="" data-catelv4="" data-catename="ประชากรศาสตร์ ประชากรและเคหะ" data-codeid="os_01">
+                                                <i class="fas fa-edit text-success"></i>
+                                            </a>
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a> </td>
+                                        <td>5</td>
+                                        <td>-ประชากรศาสตร์</td>
+                                        <td>สถิติทางการ</td>
+                                        <td>2/10/2020</td>
+                                        <td>dem</td>
+                                        <td>1/16/2020</td>
+
+                                        <td><i class="fas fa-ban text-danger"></i></td>
+                                    </tr>
+                                    <tr id="tr6">
+                                        <td><input class="check" name="record" type="checkbox" value="userId"></td>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="UUID-001" data-level="1" data-catelv1="UUID-001" data-catelv2="" data-catelv3="" data-catelv4="" data-catename="ประชากรศาสตร์ ประชากรและเคหะ" data-codeid="os_01">
+                                                <i class="fas fa-edit text-success"></i>
+                                            </a>
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a> </td>
+                                        <td>6</td>
+                                        <td>-ประชากรศาสตร์</td>
+                                        <td>สถิติทางการ</td>
+                                        <td>2/10/2020</td>
+                                        <td>dem</td>
+                                        <td>1/16/2020</td>
+
+                                        <td><i class="fas fa-ban text-danger"></i></td>
+                                    </tr>
+                                    <tr id="tr7">
+                                        <td><input class="check" name="record" type="checkbox" value="userId"></td>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="UUID-001" data-level="1" data-catelv1="UUID-001" data-catelv2="" data-catelv3="" data-catelv4="" data-catename="ประชากรศาสตร์ ประชากรและเคหะ" data-codeid="os_01">
+                                                <i class="fas fa-edit text-success"></i>
+                                            </a>
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a> </td>
+                                        <td>7</td>
+                                        <td>-ประชากรศาสตร์</td>
+                                        <td>สถิติทางการ</td>
+                                        <td>2/10/2020</td>
+                                        <td>dem</td>
+                                        <td>1/16/2020</td>
+
+                                        <td><i class="fas fa-ban text-danger"></i></td>
+                                    </tr>
+                                    <tr id="tr8">
+                                        <td><input class="check" name="record" type="checkbox" value="userId"></td>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="UUID-001" data-level="1" data-catelv1="UUID-001" data-catelv2="" data-catelv3="" data-catelv4="" data-catename="ประชากรศาสตร์ ประชากรและเคหะ" data-codeid="os_01">
+                                                <i class="fas fa-edit text-success"></i>
+                                            </a>
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a> </td>
+                                        <td>8</td>
                                         <td>-ประชากรศาสตร์</td>
                                         <td>สถิติทางการ</td>
                                         <td>2/10/2020</td>
@@ -167,24 +264,7 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="modal fade" id="addAndEditCateModal" tabindex="-1" role="dialog" aria-labelledby="addAndEditCateModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -196,7 +276,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="#">
                         <div class="form-group" id="mainCate">
                             <label for="inputMainCate" class="col-form-label text-danger">หมวดหลัก* :</label>
                             <select class="selectpicker" id="inputMainCate" data-live-search="true" title="กรุณาเลือก">
@@ -260,18 +340,23 @@
                             <label for="inputCateName" class="col-form-label text-danger">สร้างโดย* :</label>
                             <input type="text" id="inputCateName" class="form-control" placeholder="ชื่อผู้สร้าง" required="required">
                         </div>
-
+                        <div class="form-group" id="CateID">
+                            <label for="inputCateID" class="col-form-label text-danger">แก้ไขโดย* :</label>
+                            <input type="text" id="inputCateID" class="form-control" placeholder="ชื่อผู้ทำการแก้ไข" required="required">
+                        </div>
                         <div class="form-group" id="status">
                             <label for="inputStatus" class="col-form-label">เผยแพร่:</label>
                             <input type="checkbox" id="inputStatus" checked data-toggle="toggle">
 
                         </div>
-                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" id="addrow" class="btn btn-success"><i class="far fa-save"></i> บันทึก</button>
+                    <button type="submit" id="addrow" class="btn btn-success"><i class="far fa-save"></i> บันทึก</button>
                 </div>
+                </form>
+
             </div>
         </div>
     </div>
@@ -339,8 +424,15 @@
     <script src="js/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+
+        today = mm + '/' + dd + '/' + yyyy;
+
         $('#dataTable').DataTable({
-            "bInfo" : true,
+            "bInfo": true,
 
             "columns": [{
                 "orderable": false
@@ -425,11 +517,16 @@
             var cateName = button.data('catename')
             var codeID = button.data('codeid')
             var modal = $(this)
+            var checkmaincate = modal.find("#inputMainCate option:selected").text()
 
-            if (mainCate != '') {
-                modal.find('.modal-title').text('แก้ไขข้อมูลหมวดหมู่')
+
+            if (mainCate == undefined) {
+                modal.find('.modal-title').text('เพิ่มข้อมูลหมวดหมู่');
+                modal.find('#CateID').addClass('hide');
+
             } else {
-                modal.find('.modal-title').text('เพิ่มข้อมูลหมวดหมู่')
+                modal.find('.modal-title').text('แก้ไขมูลหมวดหมู่');
+                modal.find('#CateID').removeClass('hide');
             }
 
             $("#inputMainCate option:selected").removeAttr("selected");
@@ -521,29 +618,125 @@
             var fileName = $(this).val().split("\\").pop();
             $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
         });
+        //---------------------------------------------------------------เพิมตารางง-----------------------------------------------
         $(document).ready(function() {
-            $("#addrow").click(function() {
-                var mainCate = $("#inputMainCate option:selected").text();
-                var level = $("#inputLevel").val();
-                var cateLv1 = $("#inputCateLv1 option:selected").text();
-                var cateLv2 = $("#inputCateLv2 option:selected").text();
-                var cateLv3 = $("#inputCateLv3 option:selected").text();
-                var cateLv4 = $("#inputCateLv4 option:selected").text();
-                var cateName = $("#inputCateName").val();
-                var status = $("#inputStatus").val();
-                var result = "";
 
-                if (mainCate != 'กรุณาเลือก') {
-                    result = "-" + mainCate;
+            $("#addrow").click(function() {
+
+                var button = $(event.relatedTarget)
+                var mainCate = button.data('maincate')
+                var level = button.data('level')
+                var cateLv1 = button.data('catelv1')
+                var cateLv2 = button.data('catelv2')
+                var cateLv3 = button.data('catelv3')
+                var cateLv4 = button.data('catelv4')
+                var cateName = button.data('catename')
+                var codeID = button.data('codeid')
+                if ($('#addAndEditCateModal').find(".modal-title").text() != 'แก้ไขมูลหมวดหมู่') {
+                    swal({
+                            title: "คุณได้ตรวจสอบรายการเพิ่มเทมเพลตแล้ว?",
+                            text: "กรุณาตรวจสอบข้อมูลให้แน่ใจก่อนทำการกดตกลงในการเพิ่มข้อมูล!",
+                            icon: "warning",
+                            buttons: true,
+                            dangerMode: true,
+                        })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                                swal("เพิ่มข้อมูลสำเร็จแล้ว!", {
+                                    icon: "success",
+
+                                });
+                                addrow();
+                            } else {
+                                swal("คุณได้ทำการยกเลิกรายการเรียบร้อยแล้ว!");
+                            }
+                        });
+                } else {
+                    swal({
+                            title: "คุณได้ตรวจสอบรายการเพิ่มเทมเพลตแล้ว?",
+                            text: "กรุณาตรวจสอบข้อมูลให้แน่ใจก่อนทำการกดตกลงในการแก้ไขอมูล!",
+                            icon: "warning",
+                            buttons: true,
+                            dangerMode: true,
+                        })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                                swal("เพิ่มข้อมูลสำเร็จแล้ว!", {
+                                    icon: "success",
+
+                                });
+                                editrow();
+                            } else {
+                                swal("คุณได้ทำการยกเลิกรายการเรียบร้อยแล้ว!");
+                            }
+                        });
                 }
-                if (cateLv1 != 'กรุณาเลือก') {
-                    result = "--" + mainCate + " " + cateLv1;
+
+
+
+            });
+            //---------------------------------------------------------------ลบข้อมูลในตาราง-----------------------------------------
+            $("#removeall").click(function() {
+                $("#dataTable tbody").find('input[name="record"]').each(function() {
+                    if ($(this).is(":checked")) {
+                        $(this).parents("tr").remove();
+                    }
+
+
+                });
+                countrow();
+            });
+
+
+        });
+        //-----------------------------------ฟังชั่นหาid แถว ที่คลิ้ก--------------------------------------
+        var id = "";
+        var table = $('#dataTable').DataTable();
+        $('#dataTable').on('click', 'tr', function() {
+            id = table.row(this).id();
+            console.log(id);
+
+        });
+        //------------------------------------ฟังชันนับจำนวนแถว-----------------------------
+        function countrow() {
+            $.ajax({
+                url: "template.php",
+                method: "POST",
+                success: function(data) {
+                    var rowCount = $('#dataTable').find('tr').length - 1;
+                    $("#dataTable_info").text('Showing 1 to ' + rowCount + ' of ' + rowCount + ' entries');
                 }
-                if (cateLv2 != 'กรุณาเลือก') {
-                    result = "---" + mainCate + " " + cateLv1 + " " + cateLv2;
+            });
+        }
+        //---------------------------------------------------------------------ฟั่งชันเพิมตาราง--------------------------------------------------------
+        function addrow() {
+            var button = $(event.relatedTarget);
+            var mainCate = $("#inputMainCate option:selected");
+            var level = $("#inputLevel").val();
+            var cateLv1 = $("#inputCateLv1 option:selected");
+            var cateLv2 = $("#inputCateLv2 option:selected");
+            var cateLv3 = $("#inputCateLv3 option:selected");
+            var cateLv4 = $("#inputCateLv4 option:selected");
+            var cateName = $("#inputCateName").val();
+            var status = $("#inputStatus").val();
+            var result = "";
+
+
+
+
+            if (cateName != '' && mainCate.text() != 'กรุณาเลือก') {
+
+                if (mainCate.text() != 'กรุณาเลือก') {
+                    result = "-" + mainCate.text();
                 }
-                if (cateLv3 != 'กรุณาเลือก') {
-                    result = "----" + mainCate + " " + cateLv1 + " " + cateLv2 + " " + cateLv3;
+                if (cateLv1.text() != 'กรุณาเลือก') {
+                    result = "--" + mainCate.text() + " " + cateLv1.text();
+                }
+                if (cateLv2.text() != 'กรุณาเลือก') {
+                    result = "---" + mainCate.text() + " " + cateLv1.text() + " " + cateLv2.text();
+                }
+                if (cateLv3.text() != 'กรุณาเลือก') {
+                    result = "----" + mainCate.text() + " " + cateLv1.text() + " " + cateLv2.text() + " " + cateLv3.text();
                 }
 
                 console.log(result);
@@ -552,6 +745,7 @@
                 var table = document.getElementById("dataTable");
                 var totalRowCount = table.rows.length;
                 var row = table.insertRow();
+                row.id = "tr" + totalRowCount;
                 var cell1 = row.insertCell(0);
                 var cell2 = row.insertCell(1);
                 var cell3 = row.insertCell(2);
@@ -563,47 +757,105 @@
                 var cell9 = row.insertCell(8);
 
                 cell1.innerHTML = `<input id="checkAll" class="check" name="record" type="checkbox" value="">`;
-                cell2.innerHTML = `<a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="UUID-001" data-level="1" data-catelv1="UUID-001" data-catelv2="" data-catelv3="" data-catelv4="" data-catename="ประชากรศาสตร์ ประชากรและเคหะ" data-codeid="os_01">
+                cell2.innerHTML = `<a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="` + mainCate.val + `" data-level="` + level + `" data-catelv1="` + cateLv1.val + `" data-catelv2="` + cateLv2.val + `" data-catelv3="` + cateLv3.val + `" data-catelv4="` + cateLv4 + `" data-catename="` + cateName + `" data-codeid="">
                                                 <i class="fas fa-edit text-success"></i>
                                             </a>
-                                            <i class="fas fa-trash-alt text-danger"></i>`;
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a>`;
                 cell3.innerHTML = totalRowCount;
                 cell4.innerHTML = result;
                 cell5.innerHTML = cateName;
-                cell6.innerHTML = "1/20/2020";
+                cell6.innerHTML = today;
                 cell7.innerHTML = " ";
                 cell8.innerHTML = " ";
                 cell9.innerHTML = `<i class="fas fa-check-circle text-success"></i>`;
                 countrow();
+                swal({
+                    title: "เพิ่มข้อมูลเทมเพลตสำเร็จ!",
+                    text: "You clicked the button!",
+                    icon: "success",
+                    button: "ตกลง!",
+                });
+            }
+
+        }
+        //------------------------------------ฟังชันแก้ไขแถวตาราง--------------------------------
+        function editrow() {
+            var button = $(event.relatedTarget);
+            var mainCate = $("#inputMainCate option:selected");
+            var level = $("#inputLevel").val();
+            var cateLv1 = $("#inputCateLv1 option:selected");
+            var cateLv2 = $("#inputCateLv2 option:selected");
+            var cateLv3 = $("#inputCateLv3 option:selected");
+            var cateLv4 = $("#inputCateLv4 option:selected");
+            var cateName = $("#inputCateName").val();
+            var cateID = $("#inputCateID").val();
+            var status = $("#inputStatus").val();
+            var table = document.getElementById("dataTable");
+            var totalRowCount = table.rows.length;
+            var result = "";
 
 
+            if (cateName != '' && mainCate.text() != 'กรุณาเลือก') {
 
-
-            });
-            $("#removeall").click(function(){
-            $("#dataTable tbody").find('input[name="record"]').each(function(){
-            	if($(this).is(":checked")){
-                    $(this).parents("tr").remove();
+                if (mainCate.text() != 'กรุณาเลือก') {
+                    result = "-" + mainCate.text();
                 }
+                if (cateLv1.text() != 'กรุณาเลือก') {
+                    result = "--" + mainCate.text() + " " + cateLv1.text();
+                }
+                if (cateLv2.text() != 'กรุณาเลือก') {
+                    result = "---" + mainCate.text() + " " + cateLv1.text() + " " + cateLv2.text();
+                }
+                if (cateLv3.text() != 'กรุณาเลือก') {
+                    result = "----" + mainCate.text() + " " + cateLv1.text() + " " + cateLv2.text() + " " + cateLv3.text();
+                }
+                var rowold = $(table).find('#' + id).find("td").eq(2).html();
+                var dateold = $(table).find('#' + id).find("td").eq(5).html();
+
+                var newHtml = '<td><input id="checkAll" class="check" name="record" type="checkbox" value=""></td>' +
+                    `<td><a href="#" data-toggle="modal" data-target="#addAndEditCateModal" data-maincate="` + mainCate.val + `" data-level="` + level + `" data-catelv1="` + cateLv1.val + `" data-catelv2="` + cateLv2.val + `" data-catelv3="` + cateLv3.val + `" data-catelv4="` + cateLv4 + `" data-catename="` + cateName.val + `" data-codeid="">
+                                                <i class="fas fa-edit text-success"></i>
+                                            </a>
+                                            <a href="#" id="btndel" onclick="numdel(this);"><i class="fas fa-trash-alt text-danger"></i></a></td>` +
+                    '<td>' + rowold + '</td>' +
+                    '<td>' + result + '</td>' +
+                    '<td>' + cateName + '</td>' +
+                    '<td>' + dateold + '</td>' +
+                    '<td>' + cateID + '</td>' +
+                    '<td>' + today + '</td>' +
+                    '<td>`<i class="fas fa-check-circle text-success"></i>`</td>';
+                $('#' + id).html(newHtml);
 
 
-            });
-            countrow();
-        });
+                countrow();
+                swal({
+                    title: "แก้ไขข้อมูลเทมเพลตสำเร็จ!",
+                    text: "You clicked the button!",
+                    icon: "success",
+                    button: "ตกลง!",
+                });
+            }
+        }
 
-    });
-    function countrow(){
-  $.ajax({
-    url: "template.php",
-    method: "POST",
-    success: function(data) {
-      var rowCount = $('#dataTable').find('tr').length-1;
-      $("#dataTable_info").text('Showing 1 to '+rowCount+' of '+rowCount+' entries');
+//---------------------------------------------ฟังชั่นnumdelลบแถวตามที่กด----------------------
+        window.numdel = function(ele){
+    var retVal = confirm("Are you sure you want to delete ?");
+    if( retVal == true ){
+        alert("User wants to delete!");
+        var row = $(ele).closest('tr');
+        row.remove();
+        countrow();
+        return true;
     }
-  });
+    else{
+        alert ("User does not want to delete!");
+        return false;
+    }
 }
 
+
     </script>
+
 
 </body>
 

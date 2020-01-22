@@ -280,12 +280,9 @@ switch ($page) {
           PagesDropdown">
             <a class="dropdown-item <?= $activeP3 ?>" href="databasemanager.php">
                 <i class="fas fa-th-list"></i>
-                <span>ข้อกำหนดการเชื่อมต่อ</span>
+                <span>Sign View Database</span>
             </a>
-            <a class="dropdown-item <?= $activeP3 ?>" href="connectviewdatabase.php">
-                <i class="fas fa-th-list"></i>
-                <span>ซิงค์Database</span>
-            </a>
+
             <a class="dropdown-item <?= $activeP3 ?>" href="databasemap.php">
                 <i class="fas fa-th-list"></i>
                 <span>Mapping Database</span>
@@ -326,9 +323,14 @@ switch ($page) {
         <div class="dropdown-menu" aria-labelledby="statTableManagementPagesDropdown">
             <a class="dropdown-item <?= $activeP12 ?>" href="viewdatabase.php">
                 <i class="fas fa-fw fa-table"></i>
-                <span>ความครบถ้วน</span>
+                <span>ข้อมูล View Database</span>
+            </a>
+            <a class="dropdown-item <?= $activeP12 ?>" href="viewmapdatabase.php">
+                <i class="fas fa-fw fa-table"></i>
+                <span>ข้อมูล Map Database</span>
             </a>
         </div>
+
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-dark" href="#" id="statTableManagementPagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -338,7 +340,7 @@ switch ($page) {
         <div class="dropdown-menu" aria-labelledby="statTableManagementPagesDropdown">
             <a class="dropdown-item <?= $activeP12 ?>" href="report.php">
                 <i class="fas fa-fw fa-table"></i>
-                <span>รายงานการใช้</span>
+                <span>รายงานการใช้งาน</span>
             </a>
         </div>
     </li>

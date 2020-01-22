@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $result = json_decode(file_get_contents($url), true);
 
   if ($result['success']) {
+    echo "<script> location.replace('index.php');</script>";
     // TODO, when reCAPTCHA verify successfully
   } else {
     // TODO, when reCAPTCHA failed
@@ -59,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   <div class="container">
   <div class="card">
-        <form>
+        <form action="index.php">
             <div class="form-group">
 
                 <img src="http://www.nso.go.th/sites/2014/_catalogs/masterpage/NSO1/img/logo.png" alt="" srcset="" width="250px" style="display:block;margin: auto;"> <br>
@@ -67,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <label for="exampleInputEmail1">Username &nbsp;&nbsp;&nbsp;:</label>
                 </div>
                 <div style=" display: inline-block;">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 290px;">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="กรุณาใส่ชื่อผู้ใช้" aria-describedby="emailHelp" style="width: 290px;" required>
                 </div>
                 <small id="emailHelp" class="form-text text-muted">กรุณาใส่ชื่อชื่อ และ รหัสผ่านให้ถูกต้อง.</small>
             </div>
@@ -76,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="exampleInputPassword1">Password &nbsp;&nbsp;&nbsp; :</label>
             </div>
             <div class="form-group" style=" display: inline-block;">
-                <input type="password" class="form-control" id="exampleInputPassword1" style="width: 290px;">
+                <input type="password" class="form-control"placeholder="กรุณาใส่รหัสผ่านให้ถูกต้อง" id="exampleInputPassword1" style="width: 290px;" required>
             </div>
             <center>
             <div class="col-12 form-group">
@@ -91,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label class="form-check-label" for="exampleCheck1">Remember</label>
             </div>
             <div class="inlinediv float-right">
-                <button type="submit" class="btn btn-secondary ">Login</button>
+                <button type="submit" class="btn btn-success  ">Login</button>
             </div>
 
 

@@ -139,24 +139,7 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="modal fade" id="addAndEditCateModal" tabindex="-1" role="dialog" aria-labelledby="addAndEditCateModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -168,117 +151,31 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="form-group" id="mainCate">
-                            <label for="inputMainCate" class="col-form-label text-danger">หมวดหลัก* :</label>
-                            <select class="selectpicker" id="inputMainCate" data-live-search="true" title="กรุณาเลือก">
-                                <option value="">กรุณาเลือก</option>
-                                <option value="UUID-001">สถิติทางการ</option>
-                                <option value="UUID-002">สำมะโนและสำรวจ</option>
-                                <option value="UUID-003">ตัวชี้วัดที่สำคัญ</option>
-                                <option value="UUID-004">เฉพาะเรื่อง</option>
-                                <option value="UUID-005">กลุ่มจังหวัด</option>
-                                <option value="UUID-006">การบริหารงานภายใน</option>
-                            </select>
-                        </div>
-                        <div class="form-group hide" id="cateLv1">
-                            <label for="inputCateLv1" class="col-form-label">หมวดหมู่ Level 1 :</label>
-                            <select class="selectpicker" id="inputCateLv1" data-live-search="true" title="กรุณาเลือก">
-                                <option value="">กรุณาเลือก</option>
-                                <option value="UUID-001">ประชากรศาสตร์ ประชากรและเคหะ</option>
-                                <option value="UUID-002">แรงงาน</option>
-                                <option value="UUID-003">การศึกษา</option>
-                                <option value="UUID-004">ศาสนา ศิลปะ วัฒนธรรม</option>
-                                <option value="UUID-005">สุขภาพ</option>
-                                <option value="UUID-006">สวัสดิการสังคม</option>
-                                <option value="UUID-007">หญิงและชาย</option>
-                                <option value="UUID-008">รายได้และรายจ่ายของครัวเรือน</option>
-                                <option value="UUID-009">ยุติธรรม ความมั่นคง การเมืองและการปกครอง</option>
-                            </select>
-                        </div>
-                        <div class="form-group hide" id="cateLv2">
-                            <label for="inputCateLv2" class="col-form-label">หมวดหมู่ Level 2 :</label>
-                            <select class="selectpicker" id="inputCateLv2" data-live-search="true" title="กรุณาเลือก">
-                                <option value="">กรุณาเลือก</option>
-                                <option value="UUID-001">ประชากรศาสตร์</option>
-                                <option value="UUID-002">ประชากร</option>
-                                <option value="UUID-003">เคหะ</option>
-                            </select>
-                        </div>
-                        <div class="form-group hide" id="cateLv3">
-                            <label for="inputCateLv3" class="col-form-label">หมวดหมู่ Level 3 :</label>
-                            <select class="selectpicker" id="inputCateLv3" data-live-search="true" title="กรุณาเลือก">
-                                <option value="">กรุณาเลือก</option>
-                                <option value="UUID-001">อัตราเกิดอย่างหยาบ</option>
-                                <option value="UUID-002">อัตราตายอย่างหยาบ</option>
-                                <option value="UUID-003">อัตราย้ายถิ่น</option>
-                                <option value="UUID-003">ภาวะเจริญพันธ์</option>
-                            </select>
-                        </div>
+                <div class="mx-auto">
 
-                        <div class="form-group">
-                            <label for="inputCateID" class="col-form-label">Level :</label>
-                            <input type="text" id="inputLevel" class="form-control" placeholder="Level" required="required" readonly>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputCateName" class="col-form-label text-danger">ชื่อหมวดหมู่* :</label>
-                            <input type="text" id="inputCateName" class="form-control" placeholder="ชื่อหมวดหมู่" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputCateID" class="col-form-label text-danger">Code ID* :</label>
-                            <input type="text" id="inputCateID" class="form-control" placeholder="Code ID" required="required">
-                        </div>
-                        <div class="form-group" id="status">
-                            <label for="inputStatus" class="col-form-label">เผยแพร่:</label>
-                            <input type="checkbox" id="inputStatus" checked data-toggle="toggle">
-                        </div>
-                        <input type="hidden" id="inputID" value="">
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success"><i class="far fa-save"></i> บันทึก</button>
-                </div>
-            </div>
-        </div>
+<div class="input-group" style="margin-top:20px">
+    <span class="">รายการข้อมูล *: &nbsp;&nbsp;</span>
+    <div style="width: 250px;">
+        <select class="form-control" name="location">
+            <option>Connection_Name</option>
+
+        </select>
     </div>
+</div>
+<div class="input-group" style="margin-top:20px;">
+    <span class="">Upload FIle *:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <div class="custom-file" style="width: 250px;">
+        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+    </div>
+</div>
+<br><br>
+<p style="text-align: center;">
+    <button class="btn btn-primary">Upload</button>
+    <button class="btn btn-danger"data-dismiss="modal" >ยกเลิก</button>
+</p>
+</div>
 
-    <div class="modal fade" id="importCateModal" tabindex="-1" role="dialog" aria-labelledby="importCateModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="addCateModalLabel">นำเข้า File หมวดหมู่</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group" id="mainCate">
-                            <label for="inputMainCate" class="col-form-label">หมวดหลัก:</label>
-                            <select class="selectpicker" id="inputMainCate" data-live-search="true" title="กรุณาเลือก">
-                                <option value="">กรุณาเลือก</option>
-                                <option value="UUID-001">สถิติทางการ</option>
-                                <option value="UUID-002">สำมะโนและสำรวจ</option>
-                                <option value="UUID-003">ตัวชี้วัดที่สำคัญ</option>
-                                <option value="UUID-004">เฉพาะเรื่อง</option>
-                                <option value="UUID-005">กลุ่มจังหวัด</option>
-                                <option value="UUID-006">การบริหารงานภายใน</option>
-                            </select>
-                        </div>
-                        <div class="form-group" id="fileCate">
-                            <label class="col-form-label">File ข้อมูลหมวดหมู่ csv:</label>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="inputFile">
-                                <label class="custom-file-label" for="inputFile">Choose file</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success"><i class="far fa-save"></i> บันทึก</button>
-                </div>
             </div>
         </div>
     </div>
@@ -380,10 +277,10 @@
             var cateName = button.data('catename')
             var codeID = button.data('codeid')
             var modal = $(this)
-            if (mainCate != '') {
+            if (mainCate != undefined) {
                 modal.find('.modal-title').text('แก้ไขข้อมูลหมวดหมู่')
             } else {
-                modal.find('.modal-title').text('เพิ่มข้อมูลหมวดหมู่')
+                modal.find('.modal-title').text('Upload CSV')
             }
 
             $("#inputMainCate option:selected").removeAttr("selected");
